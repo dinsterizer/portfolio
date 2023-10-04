@@ -34,7 +34,7 @@ import { SEO } from 'astro-seo'
       <a href="/" class="text-sm">Home</a>
     </div>
 
-    <main class="p-4 mt-28">
+    <main class="p-4 mt-20 lg:mt-28">
       <h1 class="text-3xl">Hi, I`m Dinh 👋</h1>
       <p class="text-sm text-foreground/80 mt-4 leading-7">
         I'm a <span class="text-primary/80">software developer</span>. I started learning programming in 2019, and now
@@ -52,10 +52,10 @@ import { SEO } from 'astro-seo'
       </div>
     </main>
 
-    <div class="grid grid-cols-2 mt-28 gap-4">
+    <div class="grid lg:grid-cols-2 mt-20 lg:mt-28 gap-4">
       <div id="substack-feed-embed"></div>
 
-      <div>
+      <div class="p-4">
         <div class="p-6 rounded-xl border">
           <div class="text-sm">Stay up to date</div>
           <div class="mt-1 text-muted-foreground text-sm">Get notified when new posts are out. No spam ever.</div>
@@ -81,7 +81,7 @@ import { SEO } from 'astro-seo'
     <script>
       window.SubstackFeedWidget = {
         substackUrl: 'divndev.substack.com',
-        posts: 3,
+        posts: 10,
         layout: 'right',
         hidden: ['author', 'premium', 'image'],
         colors: {
